@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp"
+            >
+            <Button
+                android:id="@+id/btnTostada"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_weight="0"
+                android:backgroundTint="#8BC34A"
+                android:text="Tostada"
+                android:textColor="#fff"
+                android:onClick="showToast"
+                />
+
+            <Button
+                android:id="@+id/btnIncrement"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="0"
+                android:text="Aumentar"
+                android:backgroundTint="#8BC34A"
+                android:textColor="#fff"
+                android:layout_marginTop="20dp"
+                android:onClick="increment"/>
+
+            <Button
+                android:id="@+id/btnReset"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_weight="0"
+                android:text="Cero/Reset"
+                android:backgroundTint="#8BC34A"
+                android:textColor="#fff"
+                android:layout_marginTop="20dp"
+                android:onClick="reset"/>
+
+            <Button
+                android:id="@+id/btnReduce"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_weight="0"
+                android:text="Reducir"
+                android:backgroundTint="#8BC34A"
+                android:textColor="#fff"
+                android:layout_marginTop="20dp"
+                android:onClick="decrement"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+            <TextView
+                android:id="@+id/textCounter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#CD372C"
+                android:text="0"
+                android:textColor="#fff"
+                android:textSize="200sp"
+                android:textAlignment="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
